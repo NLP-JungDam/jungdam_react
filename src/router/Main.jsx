@@ -1,8 +1,13 @@
- import React from "react";
- import MainPage from "../pages/MainPage";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "../pages/MainPage";
 
- const Main = () => {
-    return <MainPage />;
- };
+const Main = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+    </Routes>
+  );
+};
 
- export default Main;
+export default Main;
